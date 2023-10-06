@@ -113,7 +113,7 @@ def train(epoch):
         _, predicted = outputs.max(1)
         total = targets.size(0)
         correct = predicted.eq(targets).sum().item()
-        train_acc=correct/total
+        train_acc = correct/total
         progress_bar(batch_idx, len(trainloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
         
@@ -124,7 +124,7 @@ def train(epoch):
             wandb.log({'last_lr': last_lr})
         scheduler.step()'''
 
-        steps+=1
+        steps += 1
         if args.use_wandb:
             wandb.log({'loss':train_loss/(batch_idx+1),
                        'train_acc':train_acc,
@@ -132,10 +132,9 @@ def train(epoch):
 
     
 def test(epoch):
-    global best_acc
     net.eval()
     #Designation of the value of stop condition.
-    break_test_acc=90.0
+    break_test_acc = 0.9
     test_loss = 0
     correct = 0
     total = 0
@@ -153,8 +152,7 @@ def test(epoch):
             progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                          % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
-    # Save checkpoint.
-    test_acc = 100.*correct/total
+    test_acc = correct/total
     if args.use_wandb:
         wandb.log({'test_acc': test_acc})
     

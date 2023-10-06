@@ -126,7 +126,7 @@ def train(epoch):
         _, predicted = outputs.max(1)
         total = targets.size(0)
         correct = predicted.eq(targets).sum().item()
-        train_acc=correct/total
+        train_acc = correct/total
         progress_bar(batch_idx, len(trainloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
         
@@ -175,7 +175,6 @@ def test(epoch):
             progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                          % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
-    # Save checkpoint.
     test_acc = 100.*correct/total
     if args.use_wandb:
         wandb.log({'test_acc': test_acc})
