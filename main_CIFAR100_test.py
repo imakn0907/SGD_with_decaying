@@ -146,7 +146,7 @@ def test(epoch):
     global best_acc
     net.eval()
     #Designation of the value of stop condition.
-    break_test_acc = 0.9
+    break_test_acc = 0.6
     test_loss = 0
     correct = 0
     total = 0
