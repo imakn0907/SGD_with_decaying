@@ -134,7 +134,7 @@ def train(epoch):
 def test(epoch):
     net.eval()
     #Designation of the value of stop condition.
-    break_test_acc = 0.9
+    break_test_acc = 0.99
     test_loss = 0
     correct = 0
     total = 0
