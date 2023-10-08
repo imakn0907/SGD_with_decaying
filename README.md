@@ -20,3 +20,6 @@ Figure 3: SFO complexity needed for SGD with (Constant), (Decay 1), (Decay 2), (
 ![Wide28-10-CIFAR10_test_K-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/d0dae17a-6e1e-4657-9aee-97571f7b2ec6)
 
 Figure 4: Number of iterations needed for SGD with (Constant), (Decay 1), (Decay 2), (Decay 3), and (Decay 4) to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
+
+
+We trained not only ResNet-18 but also WideResNet-28-10 on CIFAR-10 dataset. The stopping condition and value of hyperparameters are the same as our paper.
