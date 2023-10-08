@@ -9,3 +9,6 @@ This paper studies the relationship between batch size and the iteration and the
 
 Figure 1: SFOcomplexity needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
+![Wide28-10-CIFAR10_test_N-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/d4c1628b-a25f-481d-bad5-36023ea01949)
+
+Figure 2: SFO complexity needed for SGD with (Constant), (Decay 1), (Decay 2), (Decay 3), and (Decay 4) to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
