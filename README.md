@@ -7,7 +7,7 @@ This paper studies the relationship between batch size and the iteration and the
 
 ![Wide28-10-CIFAR10_opttest_N-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/60ec582a-75dd-4a3d-979e-d20cd7bc07bc)
 
-Figure 1: SFOcomplexity needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
+Figure 1: SFO complexity needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
 ![Wide28-10-CIFAR10_opttest_K-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/6f458757-bd9d-4d36-b848-88e7041b32bd)
 
@@ -22,4 +22,4 @@ Figure 3: SFO complexity needed for SGD with (Constant), (Decay 1), (Decay 2), (
 Figure 4: Number of iterations needed for SGD with (Constant), (Decay 1), (Decay 2), (Decay 3), and (Decay 4) to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
 
-We trained not only ResNet-18 but also WideResNet-28-10 on CIFAR-10 dataset. The stopping condition and value of hyperparameters are the same as our paper.
+We trained not only ResNet-18 but also WideResNet-28-10 on CIFAR-10 dataset. The stopping condition and value of hyperparameters used in training WideResNet-28-10 are the same as ones used in training ResNet-18.
