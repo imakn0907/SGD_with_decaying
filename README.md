@@ -6,3 +6,6 @@ The performance of stochastic gradient descent (SGD), which is the simplest firs
 This paper studies the relationship between batch size and the iteration and the SFO complexities needed for nonconvex optimization in deep learning with SGD using constant/decay learning rates. We show that SGD using a step-decay learning rate and a small batch size reduces the SFO complexity to find a local minimizer of a loss function. We also provide numerical comparisons of SGD with the existing first-order optimizers and show the usefulness of SGD using a step-decay learning rate and a small batch size.
 
 ![Wide28-10-CIFAR10_opttest_N-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/60ec582a-75dd-4a3d-979e-d20cd7bc07bc)
+
+Figure 1: SFOcomplexity needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
+
