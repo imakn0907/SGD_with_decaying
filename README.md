@@ -5,19 +5,19 @@ The performance of stochastic gradient descent (SGD), which is the simplest firs
 
 This paper studies the relationship between batch size and the iteration and the SFO complexities needed for nonconvex optimization in deep learning with SGD using constant/decay learning rates. We show that SGD using a step-decay learning rate and a small batch size reduces the SFO complexity to find a local minimizer of a loss function. We also provide numerical comparisons of SGD with the existing first-order optimizers and show the usefulness of SGD using a step-decay learning rate and a small batch size.
 
-![Wide28-10-CIFAR10_opttest_N-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/60ec582a-75dd-4a3d-979e-d20cd7bc07bc)
+![Wide28-10-CIFAR10_opttest_N-b](images/Wide28-10-CIFAR10_opttest_N-b.png)
 
 Figure 1: SFO complexity needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
-![Wide28-10-CIFAR10_opttest_K-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/6f458757-bd9d-4d36-b848-88e7041b32bd)
+![Wide28-10-CIFAR10_opttest_K-b](images/Wide28-10-CIFAR10_opttest_K-b.png)
 
 Figure 2: Number of iterations needed for SGD with (Decay4), momentum, Adam, AdamW, and RMSProp to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
-![Wide28-10-CIFAR10_test_N-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/d4c1628b-a25f-481d-bad5-36023ea01949)
+![Wide28-10-CIFAR10_test_N-b](images/Wide28-10-CIFAR10_test_N-b.png)
 
 Figure 3: SFO complexity needed for SGD with (Constant), (Decay 1), (Decay 2), (Decay 3), and (Decay 4) to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
-![Wide28-10-CIFAR10_test_K-b](https://github.com/imakn0907/SGD_with_decaying/assets/143669596/d0dae17a-6e1e-4657-9aee-97571f7b2ec6)
+![Wide28-10-CIFAR10_test_K-b](images/Wide28-10-CIFAR10_test_K-b.png)
 
 Figure 4: Number of iterations needed for SGD with (Constant), (Decay 1), (Decay 2), (Decay 3), and (Decay 4) to achieve a test accuracy of 0.9 versus batch size (WideResNet-28-10 on CIFAR-10)
 
